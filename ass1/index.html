@@ -1,11 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Static Web Page</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            font-family: monospace;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 2% 2%;
+        }
+
+        .nav-left h2 {
+            font-size: 18px;
+            font-weight: 100;
+        }
+
+        .nav-right {
+            font-size: 18px;
+            display: flex;
+            gap: 20px;
+            flex-direction: row;
+        }
+
+        .nav-right a button {
+            background-color: black;
+            outline: none;
+            border: none;
+            color: white;
+            border: 1px solid red;
+            padding: 4px 10px;
+            border-radius: 50px;
+            font-size: 15px;
+        }
+
+        .hero {
+            width: 100%;
+            height: calc(100vh - 70px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .herotext p {
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+
+        .hero-btn button,
+        .footer-btn button {
+            background-color: #000000;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            outline: none;
+            border: none;
+            border: 1px solid red;
+            border-radius: 50px;
+            margin-top: 20px;
+        }
+
+        .feature {
+            width: 100%;
+            /* height: 100vh; */
+            padding: 3% 10%;
+        }
+
+        .feature h2 {
+            font-size: 25px;
+            font-weight: bolder;
+            color: royalblue;
+        }
+
+        .wrapper2 {
+            width: 100%;
+            /* height: 80%; */
+            margin-top: 50px;
+            display: flex;
+            /* align-items: center; */
+            /* justify-content: center; */
+            /* flex-direction: column; */
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            padding: 30px 40px;
+            border: 1px solid rgb(61, 61, 61);
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            font-size: 15px;
+            color: red;
+        }
+
+        .card p {
+            font-size: 30px;
+            font-weight: 100;
+        }
+
+        .footer {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .footertext {
+            font-size: 30px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .footer-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+    </style>
 </head>
+
 <body>
     <div class="navbar">
         <div class="nav-left">
@@ -18,7 +171,7 @@
             <a href=""><button>Get Gleec</button></a>
             <a href=""><button>Login</button></a>
         </div>
-    </div>    
+    </div>
     <div class="hero">
         <div class="wrapper1">
             <div class="herotext">
@@ -73,4 +226,5 @@
         </div>
     </div>
 </body>
+
 </html>
